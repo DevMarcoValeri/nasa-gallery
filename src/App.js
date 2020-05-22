@@ -5,7 +5,7 @@ import Main from './components/main/main.component';
 
 // Import images
 import blackMoon from './images/blackMoon.jpg';
-import yellowMoon from './images/yellowMoon.jpg';
+import moonDarkness from './images/moonDarkness.jpg';
 
 import './App.css';
 
@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <Header imageUrl={blackMoon} />
-        <Main imageUrl={yellowMoon} />
+        <Main imageUrlOne={moonDarkness} imageUrlTwo={blackMoon} />
       </div>
     )
   }

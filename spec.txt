@@ -23,6 +23,5 @@ REACT
 JSX
 
 Images reference:
-moon.jpg Photo by Mathew Schwartz on Unsplash
-moon-phases.jpg Photo by Mark Tegethoff on Unsplash
-yellow-moon.jpg Photo by Renzo D'souza on Unsplash
+blackMoon.jpg Photo by Mathew Schwartz on Unsplash
+moonDarkness Photo by Matthew N on Unsplash

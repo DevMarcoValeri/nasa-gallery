@@ -8,11 +8,11 @@ const Main = (props) => (
             <h2 className>Discover the space</h2>
             <div className="main-container-media">
                 <h2>Space photos</h2>
-                <img src={props.imageUrl} alt="moon" />
+                <img src={props.imageUrlOne} alt="moon" />
             </div>
             <div className="main-container-media">
                 <h2>Space videos</h2>
-                <img src={props.imageUrl} alt="logo" />
+                <img src={props.imageUrlTwo} alt="logo" />
             </div>
         </section>
     </main>
