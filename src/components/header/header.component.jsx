@@ -16,7 +16,7 @@ const Header = (props) => (
             </ul>
         </nav>
         <section className="header-container">
-            <h1 className="header-container-title">NASA Gallery</h1>
+            <h1 className="header-container-title"><a href="#main">NASA Gallery</a></h1>
         </section>
     </header>
 )
