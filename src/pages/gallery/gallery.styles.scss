@@ -1,0 +1,39 @@
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15rem auto;
+
+    .gallery-title {
+        width: 100%;
+        text-align: center;
+        
+        background-image: linear-gradient(to right, #e8985e, #F7EBE8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .gallery-search {
+        width: 80%;
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .gallery-picture {
+        width: 20rem;
+        height: 20rem;
+        margin: 2rem;
+        border: 1px solid #fff;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
