@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '../../components/navbar/navbar.component';
 import Search from '../../components/search/search.component';
 import Button from '../../components/button/button.component';
+import Footer from '../../components/footer/footer.components';
 
 import './gallery.styles.scss';
 
@@ -10,16 +11,27 @@ class Gallery extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {value: ''};
+        this.state = {
+            value: '',
+            photo: []
+        };
     }
 
     nasaGallery = () => {
-        fetch("https://images-api.nasa.gov/search?q=apollo&media_type=image")
+        fetch(`https://images-api.nasa.gov/search?q=${this.state.value}&media_type=image`)
         .then(response => response.json())
         .then(jsonResponse => {
             //console.log(jsonResponse.collection.items[0].links[0].href);
-            const images = jsonResponse.collection.items.map(image => image);
-            console.log(images);
+            //const images = jsonResponse.collection.items.map(image => image.links[0].href);
+            //console.log(images);
+
+            this.setState({photo: jsonResponse.collection.items.map((image, number) => {
+                return (
+                    <div key={number} className="gallery-picture">
+                        <img src={image.links[0].href} alt="" />
+                    </div>
+                )
+            })})
         });
     }
 
@@ -42,30 +54,10 @@ class Gallery extends React.Component {
                     <div className="gallery-search">
                         <Search value={this.state.value} onChange={this.handleChange} />
                         <Button onClick={this.handleClick} />
-                        <p>Test: {this.state.value}</p>
                     </div>
-                    <div className="gallery-picture">
-                        <img src="https://www.devmarco.com/images/js-logo.png" alt="" />
-                    </div>
-                    <div className="gallery-picture">
-                        <img src="https://www.devmarco.com/images/js-logo.png" alt="" />
-                    </div>
-                    <div className="gallery-picture">
-                        <img src="https://www.devmarco.com/images/js-logo.png" alt="" />
-                    </div>
-                    <div className="gallery-picture">
-                        <img src="https://www.devmarco.com/images/js-logo.png" alt="" />
-                    </div>
-                    <div className="gallery-picture">
-                        <img src="https://www.devmarco.com/images/js-logo.png" alt="" />
-                    </div>
-                    <div className="gallery-picture">
-                        <img src="https://www.devmarco.com/images/js-logo.png" alt="" />
-                    </div>
-                    <div className="gallery-picture">
-                        <img src="https://www.devmarco.com/images/js-logo.png" alt="" />
-                    </div>
+                    {this.state.photo}
                 </section>
+                <Footer />
             </div>
         )
     }
