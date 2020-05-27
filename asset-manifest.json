@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nasa-gallery/static/css/main.58d6cd80.chunk.css",
+    "main.js": "/nasa-gallery/static/js/main.87fa2441.chunk.js",
+    "main.js.map": "/nasa-gallery/static/js/main.87fa2441.chunk.js.map",
+    "runtime-main.js": "/nasa-gallery/static/js/runtime-main.cacad89a.js",
+    "runtime-main.js.map": "/nasa-gallery/static/js/runtime-main.cacad89a.js.map",
+    "static/js/2.0cde5f3b.chunk.js": "/nasa-gallery/static/js/2.0cde5f3b.chunk.js",
+    "static/js/2.0cde5f3b.chunk.js.map": "/nasa-gallery/static/js/2.0cde5f3b.chunk.js.map",
+    "index.html": "/nasa-gallery/index.html",
+    "precache-manifest.d12add2c3a8daba5f88c722e552c0781.js": "/nasa-gallery/precache-manifest.d12add2c3a8daba5f88c722e552c0781.js",
+    "service-worker.js": "/nasa-gallery/service-worker.js",
+    "static/css/main.58d6cd80.chunk.css.map": "/nasa-gallery/static/css/main.58d6cd80.chunk.css.map",
+    "static/js/2.0cde5f3b.chunk.js.LICENSE.txt": "/nasa-gallery/static/js/2.0cde5f3b.chunk.js.LICENSE.txt",
+    "static/media/blackMoon.jpg": "/nasa-gallery/static/media/blackMoon.59273dea.jpg",
+    "static/media/moonDarkness.jpg": "/nasa-gallery/static/media/moonDarkness.2f9a27ca.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cacad89a.js",
+    "static/js/2.0cde5f3b.chunk.js",
+    "static/css/main.58d6cd80.chunk.css",
+    "static/js/main.87fa2441.chunk.js"
+  ]
+}
