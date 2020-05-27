@@ -8,6 +8,11 @@ nav {
         padding: 2rem;
         margin: 4rem;
 
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
         &:hover {
             border-bottom: 1px solid #fff;
         }

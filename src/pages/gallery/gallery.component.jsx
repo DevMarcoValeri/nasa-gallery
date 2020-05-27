@@ -21,9 +21,6 @@ class Gallery extends React.Component {
         fetch(`https://images-api.nasa.gov/search?q=${this.state.value}&media_type=image`)
         .then(response => response.json())
         .then(jsonResponse => {
-            //console.log(jsonResponse.collection.items[0].links[0].href);
-            //const images = jsonResponse.collection.items.map(image => image.links[0].href);
-            //console.log(images);
 
             this.setState({photo: jsonResponse.collection.items.map((image, number) => {
                 return (

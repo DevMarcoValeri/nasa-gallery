@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './header.styles.scss';
 
@@ -10,9 +11,8 @@ const Header = (props) => (
     >
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Gallery</li>
-                <li>Video</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/gallery">Gallery</Link></li>
             </ul>
         </nav>
         <section className="header-container">
