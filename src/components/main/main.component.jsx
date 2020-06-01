@@ -6,7 +6,7 @@ import './main.styles.scss';
 const Main = (props) => (
     <main>
         <section className="main-container">
-            <h2 id="main" className>Discover the space</h2>
+            <h2 className>Discover the space</h2>
             <div className="main-container-media">
                 <h2>Space photos</h2>
                 <Link to="/gallery"><img src={props.imageUrlOne} alt="moon" /></Link>

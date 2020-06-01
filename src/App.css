@@ -18,11 +18,11 @@ footer {
 @media (max-width: 1024px) {
 
   html {
-    font-size: 75%;
+    font-size: 50%;
   }
 
   nav {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   input[type="submit"] {
